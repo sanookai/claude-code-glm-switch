@@ -2,14 +2,6 @@
 
 ## คู่มือติดตั้งสำหรับ Mac
 
-> 🚀 **โดย AI UNLOCKED**
-> 
-> 🌐 Website: [aiunlock.co](https://aiunlock.co/)
-> 
-> 📺 YouTube: [@AIUnlocked168](https://www.youtube.com/@AIUnlocked168)
-> 
-> 📘 Facebook: [AI Unlocked VIP](https://www.facebook.com/aiunlockedvip)
-
 ---
 
 ## 🎬 แนะนำ GLM - ใช้ Claude Code ราคาประหยัด!
