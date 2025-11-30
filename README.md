@@ -16,9 +16,13 @@
 
 [![GLM แนะนำ](https://img.youtube.com/vi/5W9felMfuVw/maxresdefault.jpg)](https://youtu.be/5W9felMfuVw)
 
+## 🚀 ลองใช้ GLM ด้วย Claude Code ทำเว็บ Frontend Simulator แบบโคตรง่าย
+
+[![GLM แนะนำ](https://img.youtube.com/vi/N9mwJgN3yrw/maxresdefault.jpg)](https://youtu.be/N9mwJgN3yrw)
+
 👆 **คลิกดูคลิปแนะนำ GLM**: https://youtu.be/5W9felMfuVw
 
-### 💰 สมัคร GLM ลดเพิ่ม 10%!
+### 💰 สมัคร GLM ลดเพิ่ม 10%! จากโปร 50% และ BFD
 
 🔗 **ลิงก์สมัคร (รับส่วนลด 10%)**: https://z.ai/subscribe?ic=UE6DWDNJQY
 
