@@ -13,7 +13,7 @@
 
 # --- GLM Config ---
 function glm_on {
-    $env:ANTHROPIC_AUTH_TOKEN = "b7fd67a75a5b4063b364e31699d46595.gYysWaxQnfGu0taW"
+    $env:ANTHROPIC_AUTH_TOKEN = "Change-Your-GLM-Token-Here"
     $env:ANTHROPIC_BASE_URL = "https://api.z.ai/api/anthropic"
     $env:API_TIMEOUT_MS = "3000000"
     $env:CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC = "1"
@@ -102,7 +102,7 @@ function claude_status {
         Write-Host "Mode: Claude Subscription"
     }
     Write-Host "----------------------------"
-    Write-Host "Powered by AI UNLOCKED"
+    Write-Host "Powered by Sanook Ai"
 }
 
 Set-Alias -Name ccc -Value claude_status
