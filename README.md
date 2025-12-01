@@ -1,22 +1,12 @@
-# 📘 Claude Code Switch GLM - AI Unlocked
+# Claude Code Switch GLM - Windows Edition
 
-## คู่มือติดตั้งสำหรับ Mac
+## คู่มือติดตั้งสำหรับ Windows (PowerShell)
 
 ---
 
-## 🎬 แนะนำ GLM - ใช้ Claude Code ราคาประหยัด!
+### สมัคร GLM ลดเพิ่ม 10%! จากโปร 50% และ BFD
 
-[![GLM แนะนำ](https://img.youtube.com/vi/5W9felMfuVw/maxresdefault.jpg)](https://youtu.be/5W9felMfuVw)
-
-## 🚀 ลองใช้ GLM ด้วย Claude Code ทำเว็บ Frontend Simulator แบบโคตรง่าย
-
-[![GLM แนะนำ](https://img.youtube.com/vi/N9mwJgN3yrw/maxresdefault.jpg)](https://youtu.be/N9mwJgN3yrw)
-
-👆 **คลิกดูคลิปแนะนำ GLM**: https://youtu.be/5W9felMfuVw
-
-### 💰 สมัคร GLM ลดเพิ่ม 10%! จากโปร 50% และ BFD
-
-🔗 **ลิงก์สมัคร (รับส่วนลด 10%)**: https://z.ai/subscribe?ic=UE6DWDNJQY
+**ลิงก์สมัคร (รับส่วนลด 10%)**: https://z.ai/subscribe?ic=HD0SBVP0OA
 
 ---
 
@@ -24,62 +14,60 @@
 
 | โหมด | คำอธิบาย |
 |------|----------|
-| 🟢 **GLM** | ใช้ GLM ผ่าน proxy API |
-| 🔵 **Subscription** | ใช้ Claude แท้ผ่าน Max Plan |
-| 🟣 **API** | ใช้ Claude แท้ผ่าน API Key |
+| **GLM** | ใช้ GLM ผ่าน proxy API |
+| **Subscription** | ใช้ Claude แท้ผ่าน Max Plan |
+| **API** | ใช้ Claude แท้ผ่าน API Key |
 
 ---
 
-## 📦 ไฟล์ที่ได้รับ
+## ไฟล์ที่ต้องใช้
 
 ```
-claude-code-switch-glm-ai-unlocked/
-├── README.md                              ← คู่มือนี้
-└── claude-code-switch-glm-ai-unlocked.sh  ← ไฟล์ config
+claude-code-switch-glm/
+├── readme-windows.md                 ← คู่มือนี้
+└── claude-code-switch-glm-windows.ps1  ← ไฟล์ config สำหรับ Windows
 ```
 
 ---
 
-## 🔑 ขั้นตอนที่ 1: ตั้งค่า API Keys
+## ขั้นตอนที่ 1: ตั้งค่า API Keys
 
-### ⚠️ สำคัญ: ต้องใส่ API Key ก่อนติดตั้ง
+### **สำคัญ: ต้องใส่ API Key ก่อนติดตั้ง**
 
-เปิดไฟล์ `claude-code-switch-glm-ai-unlocked.sh` ด้วย TextEdit หรือ VS Code แล้วแก้ไข:
+เปิดไฟล์ `claude-code-switch-glm-windows.ps1` ด้วย Notepad หรือ VS Code แล้วแก้ไข:
 
 ---
 
-### 🟢 สำหรับ GLM
+### สำหรับ GLM
 
 หาบรรทัดนี้:
-```bash
-export ANTHROPIC_AUTH_TOKEN="ใส่-GLM-TOKEN-ของคุณ-ตรงนี้"
+```powershell
+$env:ANTHROPIC_AUTH_TOKEN = "ใส่-GLM-TOKEN-ของคุณ-ตรงนี้"
 ```
 
 เปลี่ยนเป็น GLM Token ของคุณ:
-```bash
-export ANTHROPIC_AUTH_TOKEN="abc123xyz456..."
+```powershell
+$env:ANTHROPIC_AUTH_TOKEN = "abc123xyz456..."
 ```
 
 **วิธีหา GLM Token:**
-1. สมัคร GLM ที่: https://z.ai/subscribe?ic=UE6DWDNJQY (ลดเพิ่ม 10%!)
+1. สมัคร GLM ที่: https://z.ai/subscribe?ic=HD0SBVP0OA (ลดเพิ่ม 10%!)
 2. เข้าไปที่เว็บ GLM หลังสมัครเสร็จ
 3. ไปที่หน้า API Keys หรือ Settings
 4. คัดลอก Token มาใส่
 
-📺 **ดูวิธีสมัครแบบละเอียด**: https://youtu.be/5W9felMfuVw
-
 ---
 
-### 🟣 สำหรับ Claude API
+### สำหรับ Claude API
 
 หาบรรทัดนี้:
-```bash
-export ANTHROPIC_API_KEY="ใส่-ANTHROPIC-API-KEY-ของคุณ-ตรงนี้"
+```powershell
+$env:ANTHROPIC_API_KEY = "YOUR-ANTHROPIC-API-KEY-HERE"
 ```
 
 เปลี่ยนเป็น API Key ของคุณ:
-```bash
-export ANTHROPIC_API_KEY="sk-ant-api03-xxxxx..."
+```powershell
+$env:ANTHROPIC_API_KEY = "sk-ant-api03-xxxxx..."
 ```
 
 **วิธีหา Anthropic API Key:**
@@ -90,62 +78,83 @@ export ANTHROPIC_API_KEY="sk-ant-api03-xxxxx..."
 
 ---
 
-### 🔵 สำหรับ Claude Subscription
+### สำหรับ Claude Subscription
 
 ไม่ต้องตั้งค่าอะไร! ใช้ account ที่ login ไว้กับ Claude Code ได้เลย
 
 ---
 
-## 🚀 ขั้นตอนที่ 2: ติดตั้ง
+## ขั้นตอนที่ 2: ติดตั้งลง PowerShell Profile
 
-### วิธีที่ 1: ใช้ Terminal (แนะนำ)
+### วิธีที่ 1: ใช้คำสั่ง (แนะนำ)
 
-```bash
-# 1. แตกไฟล์ zip (ถ้ายังไม่ได้แตก)
-unzip ~/Downloads/claude-code-switch-glm-ai-unlocked.zip -d ~/Downloads/
+1. เปิด **PowerShell** (กด Windows + X แล้วเลือก Windows PowerShell)
 
-# 2. เปิดไฟล์แก้ไข API Key (ทำตามขั้นตอนที่ 1 ก่อน)
-nano ~/Downloads/claude-code-switch-glm-ai-unlocked/claude-code-switch-glm-ai-unlocked.sh
+2. ตรวจสอบว่ามี Profile หรือยัง:
+   ```powershell
+   Test-Path $PROFILE
+   ```
 
-# 3. เพิ่ม config เข้า .zshrc
-cat ~/Downloads/claude-code-switch-glm-ai-unlocked/claude-code-switch-glm-ai-unlocked.sh >> ~/.zshrc
+3. ถ้าได้ `False` ให้สร้าง Profile ก่อน:
+   ```powershell
+   New-Item -Path $PROFILE -Type File -Force
+   ```
 
-# 4. โหลด config ใหม่
-source ~/.zshrc
+4. เปิด Profile ด้วย Notepad:
+   ```powershell
+   notepad $PROFILE
+   ```
 
-# 5. ทดสอบ
-ccc
-```
+5. เพิ่มบรรทัดนี้ลงไปในไฟล์ (เปลี่ยน path ให้ตรงกับที่เก็บไฟล์):
+   ```powershell
+   . "C:\path\to\claude-code-switch-glm-windows.ps1"
+   ```
 
-### วิธีที่ 2: แก้ไขด้วย TextEdit
+   ตัวอย่าง:
+   ```powershell
+   . "C:\Users\YourName\Downloads\claude-code-switch-glm\claude-code-switch-glm-windows.ps1"
+   ```
 
-1. แตกไฟล์ zip
-2. คลิกขวาที่ไฟล์ `.sh` → Open With → TextEdit
-3. แก้ไข API Keys ตามขั้นตอนที่ 1
-4. บันทึกไฟล์
-5. เปิด Terminal แล้วรัน:
-```bash
-cat ~/Downloads/claude-code-switch-glm-ai-unlocked/claude-code-switch-glm-ai-unlocked.sh >> ~/.zshrc
-source ~/.zshrc
+6. บันทึกและปิด Notepad
+
+7. โหลด Profile ใหม่:
+   ```powershell
+   . $PROFILE
+   ```
+
+8. ทดสอบ:
+   ```powershell
+   ccc
+   ```
+
+---
+
+### วิธีที่ 2: ติดตั้งอัตโนมัติด้วยคำสั่งเดียว
+
+```powershell
+# เปลี่ยน path ให้ตรงกับที่เก็บไฟล์
+$scriptPath = "C:\path\to\claude-code-switch-glm-windows.ps1"
+Add-Content -Path $PROFILE -Value "`n. `"$scriptPath`""
+. $PROFILE
 ```
 
 ---
 
-## 📝 ขั้นตอนที่ 3: วิธีใช้งาน
+## ขั้นตอนที่ 3: วิธีใช้งาน
 
 ### คำสั่งลัด
 
 | คำสั่ง | ความหมาย |
 |--------|----------|
-| `ccg` | 🟢 สลับเป็น GLM แล้วเปิด Claude |
-| `ccs` | 🔵 สลับเป็น Claude Subscription แล้วเปิด |
-| `cca` | 🟣 สลับเป็น Claude API แล้วเปิด |
-| `cc` | ⚪ เปิด Claude ด้วย config ปัจจุบัน |
-| `ccc` | 🔍 เช็คว่าตอนนี้ใช้ config อะไร |
+| `ccg` | สลับเป็น GLM แล้วเปิด Claude |
+| `ccs` | สลับเป็น Claude Subscription แล้วเปิด |
+| `cca` | สลับเป็น Claude API แล้วเปิด |
+| `cc` | เปิด Claude ด้วย config ปัจจุบัน |
+| `ccc` | เช็คว่าตอนนี้ใช้ config อะไร |
 
 ### ตัวอย่างการใช้งาน
 
-```bash
+```powershell
 # ใช้ GLM
 ccg
 
@@ -161,7 +170,7 @@ ccc
 
 ### สลับ config โดยไม่เปิด Claude
 
-```bash
+```powershell
 # สลับเป็น GLM
 glm_on
 
@@ -177,29 +186,41 @@ cc
 
 ---
 
-## ⚠️ หมายเหตุสำคัญ
+## หมายเหตุสำคัญ
 
-1. **ทุกคำสั่งจะเปิด Claude พร้อม `--dangerously-skip-permissions`** 
+1. **ทุกคำสั่งจะเปิด Claude พร้อม `--dangerously-skip-permissions`**
    - หมายความว่า Claude จะไม่ถามยืนยันก่อนรันคำสั่ง
    - ใช้ด้วยความระมัดระวัง
 
 2. **API Key เป็นความลับ**
-   - อย่าแชร์ไฟล์ `.zshrc` ให้คนอื่น
+   - อย่าแชร์ไฟล์ PowerShell Profile ให้คนอื่น
    - อย่า commit ขึ้น GitHub
 
 3. **ต้อง login Claude Code ก่อน** (สำหรับ Subscription)
-   ```bash
+   ```powershell
    claude login
+   ```
+
+4. **Execution Policy**
+   - ถ้าเจอ error เรื่อง script ไม่สามารถรันได้ ให้รัน:
+   ```powershell
+   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
    ```
 
 ---
 
-## 🔧 แก้ไขปัญหา
+## แก้ไขปัญหา
 
 ### ปัญหา: คำสั่ง ccg, ccs, cca ใช้ไม่ได้
 
-```bash
-source ~/.zshrc
+```powershell
+. $PROFILE
+```
+
+### ปัญหา: Script cannot be loaded because running scripts is disabled
+
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
 ### ปัญหา: GLM ใช้ไม่ได้
@@ -218,25 +239,22 @@ source ~/.zshrc
 
 ### ปัญหา: ต้องการแก้ไข API Key ภายหลัง
 
-```bash
-nano ~/.zshrc
-# หา ANTHROPIC_AUTH_TOKEN หรือ ANTHROPIC_API_KEY แล้วแก้ไข
-# บันทึกด้วย Ctrl+O, ออกด้วย Ctrl+X
-source ~/.zshrc
+```powershell
+notepad $PROFILE
+# หรือแก้ไขไฟล์ claude-code-switch-glm-windows.ps1 โดยตรง
 ```
 
 ### ปัญหา: ต้องการลบ config ออกทั้งหมด
 
-```bash
-nano ~/.zshrc
-# ลบตั้งแต่ "# ========================================"
-# ถึงท้ายไฟล์
-source ~/.zshrc
+```powershell
+notepad $PROFILE
+# ลบบรรทัดที่มี claude-code-switch-glm-windows.ps1 ออก
+# บันทึกและปิด แล้วเปิด PowerShell ใหม่
 ```
 
 ---
 
-## 📋 สรุป Config แต่ละโหมด
+## สรุป Config แต่ละโหมด
 
 | โหมด | ต้องใช้ | วิธีได้มา |
 |------|---------|-----------|
@@ -246,7 +264,7 @@ source ~/.zshrc
 
 ---
 
-## 🔗 ลิงก์ที่เป็นประโยชน์
+## ลิงก์ที่เป็นประโยชน์
 
 - Anthropic Console: https://console.anthropic.com
 - Claude Code Docs: https://docs.anthropic.com/claude-code
@@ -254,18 +272,11 @@ source ~/.zshrc
 
 ---
 
-## 🚀 AI UNLOCKED
+## Credits
 
-ติดตามเนื้อหาดีๆ เกี่ยวกับ AI ได้ที่:
-
-| แพลตฟอร์ม | ลิงก์ |
-|-----------|-------|
-| 🌐 Website | [aiunlock.co](https://aiunlock.co/) |
-| 📺 YouTube | [@AIUnlocked168](https://www.youtube.com/@AIUnlocked168) |
-| 📘 Facebook | [AI Unlocked VIP](https://www.facebook.com/aiunlockedvip) |
+**Developed by [Sanookai.com](https://sanookai.com)**
+**Fork from https://github.com/aiunlocked1412/claude-code-switch-glm-ai-unlocked/**
 
 ---
-
-*Claude Code Switch GLM - AI Unlocked v1.0*
-
-*Powered by AI UNLOCKED 🚀*
+*Claude Code Switch GLM - Windows Edition v1.0*
+*Developed by Sanookai.com*
